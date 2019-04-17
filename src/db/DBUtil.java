@@ -14,11 +14,9 @@ public class DBUtil {
     }
 
     public static Connection getConnection() {
-        // String ip = "192.168.235.100";
-        // String ip = "10.135.0.6";
-        String ip = "11.18.22.200";
+        String ip = "127.0.0.1";
         String port = "1521";
-        String sid = "gatest1";
+        String sid = "orcal";
         String url = "jdbc:oracle:thin:@" + ip + ":" + port + ":" + sid;
         try {
             String user = "upcouterdb";
